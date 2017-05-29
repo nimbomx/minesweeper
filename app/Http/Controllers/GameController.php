@@ -22,9 +22,23 @@ class GameController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        $game= new Game();
+        $game->rows=5;//30 Number of rows;
+        $game->cells=5;//24 Number of cells;
+        $game->mines=5;//667 Number of mines;
+        $game->user_id=$request->user()->id;
+
+        $grid=[]; //create empty Array for Grid
+        $squares= [];
+
+        $square_number=$game->rows*$game->cells; //Calculate number of squares
+
+        $game->grid=serialize($grid);
+        $game->save();
+        
+        return $game;
     }
 
     /**
