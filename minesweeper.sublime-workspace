@@ -1,0 +1,1317 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"ad",
+				"adjacents"
+			],
+			[
+				"del",
+				"deleteImg"
+			],
+			[
+				"pa",
+				"padding"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"vc",
+				"vclass"
+			],
+			[
+				"clone",
+				"clonev"
+			],
+			[
+				"allDays",
+				"allDaysV"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"sys",
+				"sysValidation"
+			],
+			[
+				"adm",
+				"adminAlertModal"
+			],
+			[
+				"update",
+				"updateAdminAlert"
+			],
+			[
+				"fix",
+				"fixPhotos"
+			],
+			[
+				"ul",
+				"ul\tTag"
+			],
+			[
+				"anti",
+				"antiguedad"
+			],
+			[
+				"antiguedad",
+				"antiguedad_id"
+			],
+			[
+				"folio",
+				"folio_licencia"
+			],
+			[
+				"box",
+				"box-shadow"
+			],
+			[
+				"cl",
+				"clearfix"
+			],
+			[
+				"border",
+				"border-top"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"wor",
+				"word-wrap"
+			],
+			[
+				"new",
+				"newLic"
+			],
+			[
+				"form",
+				"form\tTag"
+			],
+			[
+				"fs",
+				"fsfModal"
+			],
+			[
+				"ffResu",
+				"ffResultSanitized"
+			],
+			[
+				"table",
+				"table\tTag"
+			],
+			[
+				"input",
+				"input\tTag"
+			],
+			[
+				"clo",
+				"closeSession"
+			],
+			[
+				"ma",
+				"maximize"
+			],
+			[
+				"to",
+				"toLowerCase"
+			],
+			[
+				"na",
+				"nacionalidad"
+			],
+			[
+				"re",
+				"required"
+			],
+			[
+				"for",
+				"for\tfor (…) {…}"
+			],
+			[
+				"val",
+				"validateA"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"p",
+				"padding"
+			],
+			[
+				"le",
+				"leftMenu"
+			],
+			[
+				"onc",
+				"onclick\tAttr"
+			],
+			[
+				"bn",
+				"btn-primary"
+			],
+			[
+				"bo",
+				"box-shadow"
+			],
+			[
+				"toxi",
+				"toxicologico_fecha"
+			],
+			[
+				"u",
+				"ultimalicencia"
+			],
+			[
+				"has",
+				"has-feedback"
+			],
+			[
+				"vi",
+				"vigencia"
+			],
+			[
+				"ultim",
+				"ultimogafete"
+			],
+			[
+				"ins",
+				"inscripcion"
+			],
+			[
+				"saveN",
+				"saveAndQuit"
+			],
+			[
+				"fi",
+				"fixed"
+			],
+			[
+				"sty",
+				"style\tAttr"
+			],
+			[
+				"date",
+				"datepicker"
+			],
+			[
+				"btn",
+				"btn-success"
+			],
+			[
+				"fecha",
+				"fecha_nacimiento"
+			],
+			[
+				"load",
+				"loadView"
+			],
+			[
+				"ca",
+				"callbackName"
+			],
+			[
+				"id",
+				"id\tAttr"
+			],
+			[
+				"in",
+				"inscripcion"
+			],
+			[
+				"ba",
+				"background"
+			],
+			[
+				"ope",
+				"operadorSeleccionado"
+			],
+			[
+				"cu",
+				"current_page"
+			],
+			[
+				"op",
+				"operador"
+			],
+			[
+				"con",
+				"form-control"
+			],
+			[
+				"au",
+				"autofocus\tAttr"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"img",
+				"img\tTag"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"url",
+				"url\tblade-url"
+			],
+			[
+				"subcat",
+				"subcategory"
+			],
+			[
+				"subcateg",
+				"Subcategory"
+			],
+			[
+				"col",
+				"color"
+			],
+			[
+				"expo",
+				"expoDate"
+			],
+			[
+				"cate",
+				"category_id"
+			],
+			[
+				"li",
+				"list-style"
+			],
+			[
+				"t",
+				"top"
+			],
+			[
+				"bor",
+				"border-collapse"
+			],
+			[
+				"ur",
+				"url\tblade-url"
+			],
+			[
+				"hi",
+				"hidden"
+			],
+			[
+				"co",
+				"cover"
+			],
+			[
+				"st",
+				"list-style"
+			],
+			[
+				"m",
+				"middle"
+			],
+			[
+				"ta",
+				"table-cell"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"c",
+				"table-cell"
+			],
+			[
+				"ass",
+				"asset"
+			],
+			[
+				"estado",
+				"estado_otro"
+			],
+			[
+				"contr",
+				"form-control"
+			],
+			[
+				"curp",
+				"curpAutoFill"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"clave",
+				"clave_elector"
+			],
+			[
+				"rfc",
+				"rfcAutoFill"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"margi",
+				"margin"
+			],
+			[
+				"a",
+				"auto"
+			],
+			[
+				"bord",
+				"border"
+			],
+			[
+				"b",
+				"border"
+			],
+			[
+				"page",
+				"pageHeight"
+			],
+			[
+				"tr",
+				"tr\tTag"
+			],
+			[
+				"box-",
+				"box-sizing"
+			],
+			[
+				"labe",
+				"label-danger"
+			],
+			[
+				"PU",
+				"pull-right"
+			],
+			[
+				"btn-d",
+				"btn-default"
+			],
+			[
+				"he",
+				"height"
+			],
+			[
+				"gla",
+				"glyphicon-menu-hamburger"
+			],
+			[
+				"tab",
+				"table-condensed"
+			],
+			[
+				"nue",
+				"nuevalicencia"
+			],
+			[
+				"ed",
+				"editarA"
+			],
+			[
+				"muni",
+				"municipios"
+			],
+			[
+				"ulti",
+				"ultimo-gafete"
+			],
+			[
+				"nu",
+				"nuevo"
+			],
+			[
+				"pu",
+				"pull-right"
+			],
+			[
+				"edi",
+				"editar"
+			],
+			[
+				"div",
+				"div\tTag"
+			],
+			[
+				"convo",
+				"convcatoriaVue"
+			],
+			[
+				"modalidad",
+				"modalidad_id"
+			],
+			[
+				"fec",
+				"fecha_nacimiento"
+			],
+			[
+				"un",
+				"unblockGafete"
+			],
+			[
+				"nombre",
+				"nombre_completo"
+			],
+			[
+				"no",
+				"nombres"
+			],
+			[
+				"gafete",
+				"Gafete"
+			],
+			[
+				"mouse",
+				"mousedown"
+			],
+			[
+				"ap",
+				"apellidoMaterno"
+			],
+			[
+				"e",
+				"exec"
+			],
+			[
+				"ce",
+				"cedente"
+			],
+			[
+				"cesiona",
+				"cesionario_id"
+			],
+			[
+				"en",
+				"end"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"api",
+				"api_token"
+			],
+			[
+				"api_",
+				"api_token_creation"
+			],
+			[
+				"i",
+				"italic"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 242.0,
+		"last_filter": "mig",
+		"selected_items":
+		[
+			[
+				"mig",
+				"Laravel Artisan 5: Migrate"
+			],
+			[
+				"list",
+				"Laravel Artisan 5: Route:List"
+			],
+			[
+				"mi",
+				"Laravel Artisan 5: Migrate"
+			],
+			[
+				"migrat",
+				"Laravel Artisan 5: Migrate"
+			],
+			[
+				"model",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"web",
+				"Build With: nw-js.sublime-biuld"
+			],
+			[
+				"cont",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"gulp",
+				"Gulp"
+			],
+			[
+				"Contr",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"migra",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"gul",
+				"Gulp"
+			],
+			[
+				"migr",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"contr",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"gu",
+				"Gulp"
+			],
+			[
+				"ki",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"",
+				"Gulp"
+			],
+			[
+				"mod",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"con",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"kill",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"make",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"mo",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"contro",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"middle",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"roll",
+				"Laravel Artisan 5: Migrate:Rollback"
+			],
+			[
+				"make model",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"op",
+				"Laravel Artisan 5: Optimize"
+			],
+			[
+				"li",
+				"Laravel Artisan 5: Route:List"
+			],
+			[
+				"routes",
+				"Laravel Artisan 5: Route:List"
+			],
+			[
+				"miga",
+				"Laravel Artisan 5: Migrate"
+			],
+			[
+				"make migra",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"rout",
+				"Laravel Artisan 5: Route:List"
+			],
+			[
+				"ro",
+				"Laravel Artisan 5: Route:List"
+			],
+			[
+				"opti",
+				"Laravel Artisan 5: Optimize"
+			],
+			[
+				"model ",
+				"Laravel Artisan 5: Make:Model"
+			],
+			[
+				"make mig",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"migrate",
+				"Laravel Artisan 5: Migrate"
+			],
+			[
+				"make mi",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"migrati",
+				"Laravel Artisan 5: Make:Migration"
+			],
+			[
+				"mid",
+				"Laravel Artisan 5: Make:Middleware"
+			],
+			[
+				"auth",
+				"Laravel Artisan 5: Make:Auth"
+			],
+			[
+				"make:",
+				"Laravel Artisan 5: Make:Auth"
+			],
+			[
+				"controll",
+				"Laravel Artisan 5: Make:Controller"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"artisan",
+				"Laravel Artisan: Optimize"
+			],
+			[
+				"make ",
+				"Laravel Artisan: Make: Migration"
+			],
+			[
+				"show",
+				"Gulp: Show panel"
+			],
+			[
+				"hide",
+				"Gulp: Hide panel"
+			],
+			[
+				"gulp ",
+				"Gulp"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: inst",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"pa",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 416.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/C/wamp64/www/minespre/app/Square.php",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/frameimg.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/formato_show_antiguedad.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/formato_antiguedad.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/package.json",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/imprimir_antiguedad.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/imprimir_inscripciones.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/inscripciones.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/autorizar_inscripciones.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/antiguedad.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/autorizar_antiguedad.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/administrador.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/print.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/components/AppBar.vue",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/frame.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/inscripciones.js",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/administrador.js",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/app.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/_global.js",
+		"/C/nwjs/mx.gob.sctslp.concurso17/dist/html/imprimir_inscripciones.html",
+		"/C/nwjs/mx.gob.sctslp.concurso17/dist/js/NumeroALetras.js",
+		"/C/Users/nimbo/Desktop/Nueva carpeta/index.html",
+		"/C/Users/nimbo/Desktop/Nueva carpeta/jquery.min.js",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/autorizar_inscripciones.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/print-notificacion.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/webpack.config.js",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/formato_antiguedad.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/formato_inscripcion.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/gulpfile.js",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/js/global.js.map",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/print-radicacion.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/js/inscripciones.js",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/app.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/js/NumeroALetras.js",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/print-inscripcion.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/print-radicacion.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/print.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/antiguedad.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/imprimir_inscripciones.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/inscripciones.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/js/vendor/jquery-2.2.4.min.js",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/antiguedad.js",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/js/global.js",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/scss/app-layout.scss",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/index.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/frame.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/55975f1fc380cbbd3d8829c85b7dd95a.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/5bed275111d6f49bb792c8192a258c21.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/print-notificacion.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/html/text.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/2f90270bee8a6c9d83b64b1d56f215c3.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/formato_inscripcion.html",
+		"/C/Users/nimbo/workspace/AnalogWatch/index.html",
+		"/C/tizen-studio/tools/sec-tv-simulator/appLauncher/app/nTeuKYMK2N/js/main.js",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/print-incripcion.bk.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/lgn.js",
+		"/C/Users/nimbo/AppData/Roaming/Sublime Text 3/Packages/User/nw-js.sublime-build",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/components/Login.vue",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/npm-debug.log",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/formato_inscripcion.bak.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/html/app.bak.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/assets/ConvTitle.png",
+		"/C/Users/nimbo/AppData/Roaming/SCT/Concurso de Concesiones SCT/package.nw/index.html",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/App.vue",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/src/main.js",
+		"/C/Users/nimbo/Downloads/vue.min.js",
+		"/C/Users/nimbo/AppData/Roaming/SCT/Tramites SCT/package.nw/dist/app.js",
+		"/C/Users/nimbo/AppData/Roaming/SCT/Tramites SCT/package.nw/dist/operadores.js",
+		"/C/Users/nimbo/AppData/Roaming/SCT/Tramites SCT/package.nw/dist/vendor.js",
+		"/C/Users/nimbo/AppData/Roaming/SCT/Concurso de Concesiones SCT/package.nw/dist/build.js",
+		"/C/Users/nimbo/AppData/Roaming/SCT/Concurso de Concesiones SCT/package.nw/dist/html/app.html",
+		"/C/Users/nimbo/AppData/Roaming/SCT/Concurso de Concesiones SCT/package.nw/dist/moment-with-locales.min.js",
+		"/C/Users/nimbo/AppData/Roaming/SCT/Concurso de Concesiones SCT/package.nw/dist/vue.min.js",
+		"/C/Users/nimbo/AppData/Roaming/SCT/Concurso de Concesiones SCT/package.nw/package.json",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/node_modules/acorn/src/location.js",
+		"/L/SCT/apps/mx.gob.sctslp.concurso17/dist/vue.min.js",
+		"/L/SCT/apps/mx.gob.sctslp.accesos/dist/moment-with-locales.min.js",
+		"/L/SCT/apps/mx.gob.sctslp.accesos/dist/moment.min.js",
+		"/L/SCT/apps/mx.gob.sctslp.accesos/dist/html/app.html",
+		"/L/SCT/apps/mx.gob.sctslp.accesos/dist/axios.min.js",
+		"/L/SCT/apps/mx.gob.sctslp.accesos/dist/jquery-2.2.4.min.js",
+		"/L/SCT/apps/mx.gob.sctslp.accesos/~package.json",
+		"/L/SCT/apps/mx.gob.sctslp.accesos/html/index.html",
+		"/L/SCT/apps/mx.gob.sctslp.accesos/package.json",
+		"/L/SCT/apps/mx.gob.sctslp.app/package.json",
+		"/L/SCT/apps/mx.gob.sctslp.accesos/gulpfile.js",
+		"/C/wamp64/www/skdiamonds.com.mx/routes/api.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/cms/home.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/components/menu.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/components/footer.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/app/Http/Controllers/ExpoController.php",
+		"/C/wamp64/www/skdiamonds.com.mx/app/Http/Controllers/BannerController.php",
+		"/C/wamp64/www/skdiamonds.com.mx/app/Models/Product.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/product/components/editModal.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/product/components/newModal.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/app/Http/Controllers/ProductController.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/product/index.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/app/Models/Subcategory.php",
+		"/C/wamp64/www/skdiamonds.com.mx/routes/web.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/contact/public.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/product/product.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/product/categories.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/product/subcategories.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/product/products.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/assets/sass/app.scss",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/subcategory/index.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/layouts/public.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/parts/leftBar.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/app/Models/Category.php",
+		"/C/wamp64/www/skdiamonds.com.mx/database/migrations/2016_12_26_122110_create_products_table.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/subcategory/components/newModal.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/subcategory/components/editModal.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/database/migrations/2016_12_26_110439_create_categories_table.php",
+		"/C/wamp64/www/skdiamonds.com.mx/database/migrations/2017_01_03_164857_create_subcategories_table.php",
+		"/C/wamp64/www/skdiamonds.com.mx/app/Http/Controllers/SubcategoryController.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/expos/index.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/expos/components/newModal.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/app/Http/Controllers/CategoryController.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/category/components/newModal.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/category/components/editModal.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/expos/components/editModal.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/app/Models/Expo.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/banner/components/editModal.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/node_modules/clean-css/lib/properties/can-override.js",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/history/public.blade.php",
+		"/C/wamp64/www/skdiamonds.com.mx/resources/views/section/expos/public.blade.php",
+		"/C/wamp64/www/ccpslp.org.mx/app/Http/routes.php",
+		"/C/wamp64/www/skdiamonds.com.mx/database/migrations/2017_01_02_112444_create_expos_table.php"
+	],
+	"find":
+	{
+		"height": 23.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"revealed",
+			"reveal",
+			"revealed",
+			"ymd",
+			"allDays",
+			"Declarado:",
+			"AUTH",
+			"sysValidation",
+			"validació",
+			"validacion",
+			"moment",
+			"filter",
+			"apiRoute",
+			"listItems",
+			"link",
+			"setPublic",
+			"link",
+			"antiq",
+			"link",
+			"Valida",
+			"antiq",
+			"data",
+			"openWindow",
+			"openLink",
+			"validación se",
+			"validacion se",
+			"validacion fe",
+			"calculate",
+			"elements",
+			"calculate",
+			"allDays",
+			"Invalidar",
+			"vClass",
+			"fa-times",
+			"Invalidado por",
+			"Validado por",
+			"validado",
+			"Validate",
+			"lValidate",
+			"Validar",
+			"Buscar licencias",
+			"Falta Constancia",
+			"allDays",
+			"ymd",
+			"allDays",
+			"ymd",
+			"validado",
+			"ymd",
+			"allDays",
+			"firstDate",
+			"21",
+			"buscar licencias",
+			"nombre_completo",
+			"validación de ",
+			"cf",
+			"Alerta",
+			"adminAlertModal",
+			"Alerta para",
+			"fix_scann",
+			"admin",
+			"modal",
+			"validación",
+			"validacion compl",
+			"CF",
+			"perito",
+			"exclama",
+			"finanzas",
+			"CF",
+			"openLink",
+			"image",
+			"nww",
+			"image",
+			"imagen",
+			"getAn",
+			"gafete",
+			"validar",
+			"v_finanzas",
+			"validar",
+			"quit",
+			"validarConstancia",
+			"buscar",
+			"fa-excla",
+			"Constancia val",
+			"buscar",
+			"mostrar",
+			"elegir",
+			"validar",
+			"mostrar",
+			"antiqImpreso",
+			"validar",
+			"Captura",
+			"antiqCaptured",
+			"validar a",
+			"fsfModal",
+			"showFsFForm",
+			"licencias originales",
+			"agregar licencias",
+			"fsfModal",
+			"showFsFForm",
+			"buscar",
+			"validar",
+			"editar",
+			"eliminar",
+			"formato",
+			"Const",
+			"printDoc",
+			"gafete",
+			"numero",
+			"editar",
+			"full",
+			"font",
+			"DecenasY",
+			"this.antiguedad.gafete",
+			"folioins",
+			"folioi",
+			"folioins",
+			"placeHolder",
+			"qr",
+			"makeCode",
+			"searchFsF",
+			"Agregar",
+			"this.antiguedad.finanzas",
+			"fsfResultSanitized",
+			"fsfSanitize",
+			"searchFsF",
+			"showFsFForm",
+			"Buscar licencias",
+			"check"
+		],
+		"highlight": false,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			":false",
+			":true",
+			"fecha_concesion",
+			"operador->usuario",
+			"operador",
+			"$item",
+			"$link",
+			"$boletin",
+			"$contacto",
+			"$red",
+			"$diapo",
+			"(../img/jquery-te.png)"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 404.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.gulp_output":
+	{
+		"height": 156.0
+	},
+	"pinned_build_system": "Packages/User/nw-js.sublime-biuld.sublime-build",
+	"project": "minesweeper.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"api",
+				"routes\\api.php"
+			],
+			[
+				"web",
+				"routes\\web.php"
+			],
+			[
+				"insc",
+				"dist\\html\\inscripciones.html"
+			],
+			[
+				"frame",
+				"dist\\html\\frame.html"
+			],
+			[
+				"fra",
+				"dist\\html\\frame.html"
+			],
+			[
+				"produ",
+				"app\\Http\\Controllers\\ProductController.php"
+			],
+			[
+				"expo",
+				"app\\Models\\Expo.php"
+			],
+			[
+				"lef",
+				"resources\\views\\parts\\leftBar.blade.php"
+			],
+			[
+				"cat",
+				"app\\Http\\Controllers\\CategoryController.php"
+			],
+			[
+				"productc",
+				"app\\Http\\Controllers\\ProductController.php"
+			],
+			[
+				"left",
+				"resources\\views\\parts\\leftBar.blade.php"
+			],
+			[
+				"appscss",
+				"resources\\assets\\sass\\app.scss"
+			],
+			[
+				"menu",
+				"resources\\views\\components\\menu.blade.php"
+			],
+			[
+				"",
+				"app\\Http\\Controllers\\CategoryController.php"
+			],
+			[
+				"index.php",
+				"resources\\views\\section\\category\\index.blade.php"
+			],
+			[
+				"bann",
+				"app\\Http\\Controllers\\BannerController.php"
+			],
+			[
+				"cate",
+				"app\\Models\\Category.php"
+			],
+			[
+				"categ",
+				"app\\Http\\Controllers\\CategoryController.php"
+			],
+			[
+				"editar",
+				"files\\parts\\convocatoria-editar-operador.html"
+			],
+			[
+				"pack",
+				"package.json"
+			],
+			[
+				"cesio",
+				"js\\app\\cesiones.js"
+			],
+			[
+				"apd",
+				"layouts\\apdsCsrio.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"L:\\SCT\\apps\\mx.gob.sctslp.permisos\\permisos SCT.sublime-project"
+			],
+			[
+				"cit",
+				"C:\\wamp64\\www\\citapp.nimbo.mx\\citapp.nimbo.mx.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"data",
+				"Database"
+			]
+		],
+		"width": 717.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 377.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
