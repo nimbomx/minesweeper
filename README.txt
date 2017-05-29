@@ -4,9 +4,9 @@
 # Create Database [done]
 	Config DB [done]
 # Install Passport [done]
-# NPM install
+# NPM install [done]
 
-#Create Game Model/Controller/Migration
+#Create Game Model/Controller/Migration [done]
 	Create Method
 		Create Grid
 		Add Mines
