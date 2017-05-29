@@ -1,9 +1,9 @@
 # Create Public Repo in GitHub [done]
 # Fresh Laravel [done]
 # Auth Scaffolding [done]
-# Create Database
-	Config DB
-# Install Passport
+# Create Database [done]
+	Config DB [done]
+# Install Passport [done]
 # NPM install
 
 #Create Game Model/Controller/Migration
