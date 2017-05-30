@@ -79,8 +79,7 @@ class GameController extends Controller
         $game->grid=json_encode($grid); //Encode as JSON to store
         $game->save();
 
-        $game->grid=json_decode($game->grid); //Decode JSON to consume
-        return $game;
+        return $this->hideInfo($game);
     }
 
     /**
@@ -102,16 +101,7 @@ class GameController extends Controller
      */
     public function show(Game $game)
     {
-        $game->grid=json_decode($game->grid);
-        foreach($game->grid as $row){
-            foreach($row as $cell){
-                if(!$cell->revealed) {
-                    $cell->mine=null;
-                    $cell->adjacents=null;
-                }
-            }
-        }
-        return $game;
+        return $this->hideInfo($game);
     }
 
 
@@ -173,5 +163,20 @@ class GameController extends Controller
 
 
         return json_encode($current_cell);
+    }
+
+    //HELPERS
+
+    private function hideInfo(Game $game){
+        $game->grid=json_decode($game->grid);
+        foreach($game->grid as $row){
+            foreach($row as $cell){
+                if(!$cell->revealed) {
+                    $cell->mine=null;
+                    $cell->adjacents=null;
+                }
+            }
+        }
+        return $game;
     }
 }
