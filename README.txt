@@ -29,10 +29,10 @@
 		Reveal adjacents if blank [done]
 
 	Add Marks
-		Red Flag
-		Question
+		Red Flag [done]
+		Question [done]
 
-	Detect if all squares are revealed
+	Detect if all squares are revealed [done]
 		On win ask for destroy game
 
 #Customize Grid

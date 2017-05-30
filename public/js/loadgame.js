@@ -72,49 +72,69 @@
 /***/ (function(module, exports) {
 
 var app = new Vue({
-  el: '#app',
-  data: {
-    grid: [],
-    game: loadGame
-  },
-  mounted: function mounted() {
-    this.loadGame();
-  },
+	el: '#app',
+	data: {
+		grid: [],
+		game: loadGame,
+		mines: null
+	},
+	mounted: function mounted() {
+		this.loadGame();
+	},
 
-  methods: {
-    loadGame: function loadGame() {
-      var _this = this;
+	methods: {
+		loadGame: function loadGame() {
+			var _this = this;
 
-      axios.get(apiRoute + '/api/game/' + this.game).then(function (response) {
-        _this.grid = response.data.grid;
-      });
-    },
-    reveal: function reveal(cell) {
-      var _this2 = this;
+			axios.get(apiRoute + '/api/game/' + this.game).then(function (response) {
+				_this.grid = response.data.grid;
+				_this.mines = response.data.mines;
+			});
+		},
+		reveal: function reveal(cell) {
+			var _this2 = this;
 
-      if (cell.revealed != 0) return false;
-      if (cell.flags > 0) return false;
-      axios.get(apiRoute + '/api/square-reveal/' + this.game + '/' + cell.id).then(function (response) {
-        cell.revealed = response.data.revealed;
-        cell.mine = response.data.mine;
-        cell.adjacents = response.data.adjacents;
-        if (response.data.mine) {
-          alert('Bum!');
-          //[ MAKE AN GAME OVER SCREEN ]
-        }
-        if (response.data.adjacents == 0) {
-          _this2.loadGame();
-        }
-      });
-    },
-    flag: function flag(cell, e) {
-      if (cell.flags == 0) cell.flags = 1;else if (cell.flags == 1) cell.flags = 2;else if (cell.flags == 2) cell.flags = 0;
-      e.preventDefault();
-      axios.get(apiRoute + '/api/square-flag/' + this.game + '/' + cell.id + '/' + cell.flags).then(function (response) {
-        console.log('flagged');
-      });
-    }
-  }
+			if (cell.revealed != 0) return false;
+			if (cell.flags > 0) return false;
+			axios.get(apiRoute + '/api/square-reveal/' + this.game + '/' + cell.id).then(function (response) {
+				cell.revealed = response.data.revealed;
+				cell.mine = response.data.mine;
+				cell.adjacents = response.data.adjacents;
+				window.closedS = 0;
+				_this2.grid.forEach(function (row) {
+					row.forEach(function (square) {
+						if (square.revealed == 0) {
+							window.closedS++;
+						}
+					});
+				});
+				if (window.closedS == _this2.mines) {
+					_this2.winner();
+				}
+				if (response.data.mine) {
+					_this2.looser();
+				}
+				if (response.data.adjacents == 0) {
+					_this2.loadGame();
+				}
+			});
+		},
+		flag: function flag(cell, e) {
+			if (cell.flags == 0) cell.flags = 1;else if (cell.flags == 1) cell.flags = 2;else if (cell.flags == 2) cell.flags = 0;
+			e.preventDefault();
+			axios.get(apiRoute + '/api/square-flag/' + this.game + '/' + cell.id + '/' + cell.flags).then(function (response) {
+				console.log('flagged');
+			});
+		},
+		winner: function winner() {
+			console.log('win');
+			//[ MAKE AN WIN SCREEN ]
+		},
+		looser: function looser() {
+			console.log('loose');
+			//[ MAKE AN GAME OVER SCREEN ]
+		}
+	}
 });
 
 /***/ }),

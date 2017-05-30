@@ -74,40 +74,17 @@
 var app = new Vue({
     el: '#app',
     data: {
-        grid: [],
         game: null
     },
     mounted: function mounted() {
-        if (!this.game) {
-            this.createGame();
-        }
-        // [SAVE IN LOCAL STORAGE LAST GAME ID FOR AUTLOAD ON REFRESH BROWSER]
+
+        this.createGame();
     },
 
     methods: {
         createGame: function createGame() {
-            var _this = this;
-
             axios.get(apiRoute + '/api/game/create').then(function (response) {
-                _this.grid = response.data.grid;
-                _this.game = response.data.id;
-                window.history.pushState('playgame', 'PlayGame', apiRoute + '/game/' + _this.game);
-            });
-        },
-        reveal: function reveal(cell) {
-            var _this2 = this;
-
-            axios.get(apiRoute + '/api/square-reveal/' + this.game + '/' + cell.id).then(function (response) {
-                cell.revealed = response.data.revealed;
-                cell.mine = response.data.mine;
-                cell.adjacents = response.data.adjacents;
-                if (response.data.mine) {
-                    alert('Bum!');
-                    //[ MAKE AN GAME OVER SCREEN ]
-                }
-                if (response.data.adjacents == 0) {
-                    _this2.loadGame();
-                }
+                window.location = apiRoute + '/game/' + response.data.id;
             });
         }
     }
