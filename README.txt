@@ -7,10 +7,11 @@
 # NPM install [done]
 
 #Create Game Model/Controller/Migration [done]
-	Create Method
-		Create Grid
-		Add Mines
+	Create Method 
+		Create Squares [done]
+		Add Mines [done]
 		Mix squares
+		Create Grid
 		Calculate Adjacents 
 	Show Method
 

@@ -35,6 +35,18 @@ class GameController extends Controller
 
         $square_number=$game->rows*$game->cells; //Calculate number of squares
 
+        //CREATE SQUARES
+
+        for ($i = 1; $i <= ($square_number); $i++) {
+            if($i<=$mines){
+            $square=1;//add mines
+        }else{
+            $square=0;//add empty squares
+        }
+        $squares[]=$square;
+
+        //CREATE GRID
+
         $game->grid=serialize($grid);
         $game->save();
         
