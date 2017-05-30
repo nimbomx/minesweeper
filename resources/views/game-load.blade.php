@@ -8,8 +8,9 @@
 				<div class="panel-heading">Game <button @click="createGame" class="btn btn-primary btn-xs pull-right">New game</button></div>
 
 				<div class="panel-body" v-cloak>
+				Game id: {{ $game }}<br>
 				@verbatim
-					Game id: {{ game }}<br>
+					
 
 					<table class="minesGrid" v-cloak>
 						<tr v-for="row in grid">
@@ -37,5 +38,8 @@
 @endsection
 
 @section('scripts')
-	<script src="{{ asset('js/newgame.js') }}"></script>
+<script>
+	window.loadGame={{ $game }};
+</script>
+	<script src="{{ asset('js/loadgame.js') }}"></script>
 @endsection

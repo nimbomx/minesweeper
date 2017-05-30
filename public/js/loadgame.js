@@ -63,53 +63,49 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 39);
+/******/ 	return __webpack_require__(__webpack_require__.s = 38);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 10:
-/***/ (function(module, exports) {
+/***/ 38:
+/***/ (function(module, exports, __webpack_require__) {
 
-var app = new Vue({
-  el: '#app',
-  data: {
-    grid: [],
-    game: null
-  },
-  mounted: function mounted() {
-    if (!this.game) {
-      this.createGame();
-    }
-    // [SAVE IN LOCAL STORAGE LAST GAME ID FOR AUTLOAD ON REFRESH BROWSER]
-  },
+module.exports = __webpack_require__(9);
 
-  methods: {
-    createGame: function createGame() {
-      var _this = this;
-
-      axios.get(apiRoute + '/api/game/create').then(function (response) {
-        _this.grid = response.data.grid;
-        _this.game = response.data.id;
-      });
-    },
-    reveal: function reveal(cell) {
-      cell.revealed = 1;
-      if (cell.mine) {
-        alert('Bum!');
-        //[ MAKE AN GAME OVER SCREEN ]
-      }
-    }
-  }
-});
 
 /***/ }),
 
-/***/ 39:
-/***/ (function(module, exports, __webpack_require__) {
+/***/ 9:
+/***/ (function(module, exports) {
 
-module.exports = __webpack_require__(10);
+var app = new Vue({
+    el: '#app',
+    data: {
+        grid: [],
+        game: loadGame
+    },
+    mounted: function mounted() {
+        this.loadGame();
+    },
 
+    methods: {
+        loadGame: function loadGame() {
+            var _this = this;
+
+            axios.get(apiRoute + '/api/game/' + this.game).then(function (response) {
+                _this.grid = response.data.grid;
+            });
+        },
+        reveal: function reveal(cell) {
+            cell.revealed = 1;
+            if (cell.mine) {
+                alert('Bum!');
+                //[ MAKE AN GAME OVER SCREEN ]
+            }
+        }
+    }
+});
 
 /***/ })
 

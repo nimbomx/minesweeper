@@ -2,5 +2,6 @@
   "/js/app.js": "/js/app.js",
   "/css/app.css": "/css/app.css",
   "/mix.js": "/mix.js",
-  "/js/newgame.js": "/js/newgame.js"
+  "/js/newgame.js": "/js/newgame.js",
+  "/js/loadgame.js": "/js/loadgame.js"
 }

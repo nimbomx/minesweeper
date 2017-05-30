@@ -22,3 +22,7 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::middleware('auth')->get('game', function () {
     return view('game');
 });
+Route::middleware('auth')->get('game/{game}', function ($game) {
+	$data['game']=$game;
+    return view('game-load')->with($data);
+});

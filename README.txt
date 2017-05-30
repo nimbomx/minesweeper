@@ -13,10 +13,12 @@
 		Add Mines [done]
 		Mix squares [done]
 		Create Grid [done]
-		Calculate Adjacents 
-	Show Method
+		Calculate Adjacents [done]
+	Show Method [done]
 
 #Paint Grid
+	hide info if not revealed [done]
+	hide Info from API
 
 #Events
 	Reveal
