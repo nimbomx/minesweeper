@@ -25,9 +25,9 @@ class GameController extends Controller
     public function create(Request $request)
     {
         $game= new Game();
-        $game->rows=5;//30 Number of rows;
-        $game->cells=5;//24 Number of cells;
-        $game->mines=5;//667 Number of mines;
+        $game->rows=$request->rows;//30 Number of rows;
+        $game->cells=$request->cells;//24 Number of cells;
+        $game->mines=$request->mines;//667 Number of mines;
         $game->user_id=$request->user()->id;
 
         $grid=[]; //create empty Array for Grid

@@ -4,11 +4,21 @@ const app = new Vue({
 		grid:[],
 		game:loadGame,
 		mines:null,
+		newParams:{
+            rows:10,
+            cells:10,
+            mines:15,
+		}
 	},
 	mounted(){
 		this.loadGame();
 	},
 	methods:{
+		createGame(){
+    		axios.post(apiRoute+'/api/game/create',this.newParams).then((response) => {
+                window.location=apiRoute+'/game/'+response.data.id;
+			});
+    	},
 		loadGame(){
 			axios.get(apiRoute+'/api/game/'+this.game).then((response) => {
 				this.grid=response.data.grid;

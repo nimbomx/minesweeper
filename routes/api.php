@@ -18,4 +18,5 @@ use Illuminate\Http\Request;
 });*/
 Route::middleware('auth:api')->get('square-reveal/{game}/{id}','GameController@reveal');
 Route::middleware('auth:api')->get('square-flag/{game}/{id}/{flag}','GameController@flag');
+Route::middleware('auth:api')->post('game/create','GameController@create');
 Route::middleware('auth:api')->resource('game','GameController');

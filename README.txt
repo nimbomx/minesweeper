@@ -36,15 +36,16 @@
 		On win ask for destroy game
 
 #Customize Grid
-	Rows
-	Cells
-	Mines
+	Rows [done]
+	Cells [done]
+	Mines [done]
 
 #Time Tracking
 
 #Show Saved games 
 	filter by user [done]
 	resume game [done]
+	destroy games
 
 
 

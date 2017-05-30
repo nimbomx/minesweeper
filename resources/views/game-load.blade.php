@@ -5,11 +5,22 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Game <a href="{{ url('game') }}"><button class="btn btn-primary btn-xs pull-right">New game</button></a></div>
+				<div class="panel-heading">Game
+					<div class="pull-right">
+						Rows:
+						<input class="newParams form-control" type="number" placeholder="rows" v-model="newParams.rows">
+						Cells:
+						<input class="newParams form-control" type="number" placeholder="cells" v-model="newParams.cells">
+						Mines:
+						<input class="newParams form-control" type="number" placeholder="mines" v-model="newParams.mines">
+						<button @click="createGame" class="btn btn-primary btn-xs ">New game</button>
+					</div>
+
+				</div>
 
 				<div class="panel-body" v-cloak>
-				Game id: {{ $game }}<br>
-				@verbatim
+					Game id: {{ $game }}<br>
+					@verbatim
 					
 
 					<table class="minesGrid" v-cloak>
@@ -31,7 +42,7 @@
 						</tr>
 
 					</table>
-				@endverbatim
+					@endverbatim
 					
 
 				</div>
@@ -45,5 +56,5 @@
 <script>
 	window.loadGame={{ $game }};
 </script>
-	<script src="{{ asset('js/loadgame.js') }}"></script>
+<script src="{{ asset('js/loadgame.js') }}"></script>
 @endsection

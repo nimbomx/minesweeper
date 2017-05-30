@@ -1,19 +1,22 @@
 const app = new Vue({
     el: '#app',
     data:{
-    	game:null
+    	game:null,
+        newParams:{
+            rows:10,
+            cells:10,
+            mines:15,
+        }
     },
     mounted(){
-
-    	this.createGame();
 
     },
     methods:{
     	createGame(){
-    		axios.get(apiRoute+'/api/game/create').then((response) => {
+            axios.post(apiRoute+'/api/game/create',this.newParams).then((response) => {
                 window.location=apiRoute+'/game/'+response.data.id;
-			});
-    	},
+            });
+        },
     
     }
 });

@@ -76,13 +76,23 @@ var app = new Vue({
 	data: {
 		grid: [],
 		game: loadGame,
-		mines: null
+		mines: null,
+		newParams: {
+			rows: 10,
+			cells: 10,
+			mines: 15
+		}
 	},
 	mounted: function mounted() {
 		this.loadGame();
 	},
 
 	methods: {
+		createGame: function createGame() {
+			axios.post(apiRoute + '/api/game/create', this.newParams).then(function (response) {
+				window.location = apiRoute + '/game/' + response.data.id;
+			});
+		},
 		loadGame: function loadGame() {
 			var _this = this;
 

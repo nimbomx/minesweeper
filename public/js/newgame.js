@@ -74,16 +74,18 @@
 var app = new Vue({
     el: '#app',
     data: {
-        game: null
+        game: null,
+        newParams: {
+            rows: 10,
+            cells: 10,
+            mines: 15
+        }
     },
-    mounted: function mounted() {
-
-        this.createGame();
-    },
+    mounted: function mounted() {},
 
     methods: {
         createGame: function createGame() {
-            axios.get(apiRoute + '/api/game/create').then(function (response) {
+            axios.post(apiRoute + '/api/game/create', this.newParams).then(function (response) {
                 window.location = apiRoute + '/game/' + response.data.id;
             });
         }
