@@ -38,16 +38,20 @@ class GameController extends Controller
         //CREATE SQUARES
 
         for ($i = 1; $i <= ($square_number); $i++) {
+            //USE an Object for Square
+            $square = (object)["mine"=>0, "revealed"=>0,"id"=>$i, "adjacents"=>0,"flags"=>0];
+
             if($i<=$game->mines){
-                $square=1;//add mines
+                $square->mine=1;//add mines
             }else{
-                $square=0;//add empty squares
+                $square->mine=0;//add empty squares
             }
             $squares[]=$square;
         }
 
+
         shuffle($squares); //randomize mines position
-        
+
         //CREATE GRID
         for ($r = 0; $r < ($game->rows); $r++) {
             for ($c = 0; $c < $game->cells; $c++) {

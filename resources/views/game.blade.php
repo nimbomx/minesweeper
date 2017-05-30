@@ -13,8 +13,8 @@
 					<table class="minesGrid" v-cloak>
 						<tr v-for="row in grid">
 
-							<td v-for="cell in row" class="closed">
-								{{ cell }}
+							<td v-for="cell in row" :class="{closed : cell.revealed!=1}" @click="reveal(cell)">
+								{{ cell.mine }}
 							</td>
 
 						</tr>

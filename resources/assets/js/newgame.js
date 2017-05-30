@@ -5,7 +5,10 @@ const app = new Vue({
     	game:null
     },
     mounted(){
-    	//alert('newgame');
+    	if(!this.game){
+    		this.createGame();
+    	}
+    	// [SAVE IN LOCAL STORAGE LAST GAME ID FOR AUTLOAD ON REFRESH BROWSER]
     },
     methods:{
     	createGame(){
@@ -13,6 +16,13 @@ const app = new Vue({
 				this.grid=response.data.grid;
 				this.game=response.data.id;
 			});
+    	},
+    	reveal(cell){
+    		cell.revealed=1;
+    		if(cell.mine){
+				alert('Bum!')
+				//[ MAKE AN GAME OVER SCREEN ]
+			}
     	}
     }
 });

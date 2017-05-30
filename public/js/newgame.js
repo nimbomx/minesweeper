@@ -80,25 +80,35 @@ module.exports = __webpack_require__(9);
 /***/ (function(module, exports) {
 
 var app = new Vue({
-    el: '#app',
-    data: {
-        grid: [],
-        game: null
-    },
-    mounted: function mounted() {
-        //alert('newgame');
-    },
-
-    methods: {
-        createGame: function createGame() {
-            var _this = this;
-
-            axios.get(apiRoute + '/api/game/create').then(function (response) {
-                _this.grid = response.data.grid;
-                _this.game = response.data.id;
-            });
-        }
+  el: '#app',
+  data: {
+    grid: [],
+    game: null
+  },
+  mounted: function mounted() {
+    if (!this.game) {
+      this.createGame();
     }
+    // [SAVE IN LOCAL STORAGE LAST GAME ID FOR AUTLOAD ON REFRESH BROWSER]
+  },
+
+  methods: {
+    createGame: function createGame() {
+      var _this = this;
+
+      axios.get(apiRoute + '/api/game/create').then(function (response) {
+        _this.grid = response.data.grid;
+        _this.game = response.data.id;
+      });
+    },
+    reveal: function reveal(cell) {
+      cell.revealed = 1;
+      if (cell.mine) {
+        alert('Bum!');
+        //[ MAKE AN GAME OVER SCREEN ]
+      }
+    }
+  }
 });
 
 /***/ })

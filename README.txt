@@ -9,8 +9,9 @@
 #Create Game Model/Controller/Migration [done]
 	Create Method 
 		Create Squares [done]
+			Use Object as Square [done]
 		Add Mines [done]
-		Mix squares
+		Mix squares [done]
 		Create Grid [done]
 		Calculate Adjacents 
 	Show Method
@@ -19,7 +20,7 @@
 
 #Events
 	Reveal
-		Bum!
+		Bum! [basic]
 		Reveal Square
 		Reveal adjacents if blank 
 
