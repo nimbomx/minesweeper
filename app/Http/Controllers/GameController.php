@@ -59,6 +59,23 @@ class GameController extends Controller
             }
         }
 
+        //add Adjacents
+        foreach($grid as $r=>$row){
+            foreach($row as $c=>$cell){
+                if($cell->mine){
+                    for ($r1 = -1; $r1 < 2; $r1++) {
+                        for ($c1 = -1; $c1 < 2; $c1++) {
+                            $nr= $r+$r1;
+                            $nc=$c+$c1;
+                            if(isset($grid[$nr]) && isset($grid[$nr][$nc])){
+                                $grid[$nr][$nc]->adjacents+=1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
         $game->grid=json_encode($grid); //Encode as JSON to store
         $game->save();
 

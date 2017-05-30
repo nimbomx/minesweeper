@@ -9,12 +9,16 @@
 
 				<div class="panel-body" v-cloak>
 				@verbatim
-					{{ game }}				
+					Game id: {{ game }}<br>
+
 					<table class="minesGrid" v-cloak>
 						<tr v-for="row in grid">
 
 							<td v-for="cell in row" :class="{closed : cell.revealed!=1}" @click="reveal(cell)">
-								{{ cell.mine }}
+								<span v-if="cell.mine" >[X]</span>
+								<span v-else >
+									<span v-if="cell.adjacents>0">	{{ cell.adjacents }}</span>
+								</span>
 							</td>
 
 						</tr>
