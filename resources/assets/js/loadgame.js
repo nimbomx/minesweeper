@@ -24,6 +24,9 @@ const app = new Vue({
 					alert('Bum!');
 					//[ MAKE AN GAME OVER SCREEN ]
 				}
+				if(response.data.adjacents==0){
+					this.loadGame();
+				}
 
 			});
 

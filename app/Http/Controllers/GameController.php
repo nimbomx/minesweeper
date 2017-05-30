@@ -161,6 +161,29 @@ class GameController extends Controller
         $game->grid=json_encode($grid);
         $game->save();
 
+        //IF ADJACENTS IS EMPTY REVEAL AROUND
+        //[TODO] REFACTORIZE "SEARCH EMPTY SQUARES SECTION" 
+        if($current_cell->adjacents==0){
+            //[TODO] NEED A BETTER WAY TO FOUND THE CELL, MAYBE array_search, Check if works in Multidimencional Array
+            foreach($grid as $r=>$row){
+                foreach($row as $c=>$cell){
+                    if($cell->id==$id){
+                        for ($r1 = -1; $r1 < 2; $r1++) {
+                            for ($c1 = -1; $c1 < 2; $c1++) {
+                                $nr= $r+$r1;
+                                $nc=$c+$c1;
+                                if(isset($grid[$nr]) && isset($grid[$nr][$nc])){
+                                    $grid[$nr][$nc]->revealed=1;
+                                    //[TODO] Repeat if Revealed Square Also has 0 adjacents
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            $game->grid=json_encode($grid);
+            $game->save();
+        }
 
         return json_encode($current_cell);
     }

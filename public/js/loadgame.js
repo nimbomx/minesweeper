@@ -98,6 +98,8 @@ var app = new Vue({
             });
         },
         reveal: function reveal(cell) {
+            var _this2 = this;
+
             axios.get(apiRoute + '/api/square-reveal/' + this.game + '/' + cell.id).then(function (response) {
 
                 cell.revealed = response.data.revealed;
@@ -106,6 +108,9 @@ var app = new Vue({
                 if (response.data.mine) {
                     alert('Bum!');
                     //[ MAKE AN GAME OVER SCREEN ]
+                }
+                if (response.data.adjacents == 0) {
+                    _this2.loadGame();
                 }
             });
         }
