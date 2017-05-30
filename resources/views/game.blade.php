@@ -10,11 +10,10 @@
 				<div class="panel-body" v-cloak>
 				@verbatim
 					{{ game }}				
-					<pre>{{ grid }}</pre>
-					<table v-cloak>
+					<table class="minesGrid" v-cloak>
 						<tr v-for="row in grid">
 
-							<td v-for="cell in row">
+							<td v-for="cell in row" class="closed">
 								{{ cell }}
 							</td>
 

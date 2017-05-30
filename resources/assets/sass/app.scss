@@ -7,3 +7,28 @@
 
 // Bootstrap
 @import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+
+[v-cloak]{
+	display: none;
+}
+.minesGrid{
+	margin: auto;
+	border-collapse: collapse;
+	background: #ddd;
+	tr{
+		td{
+			width: 40px;
+			height: 40px;
+			text-align: center;
+			vertical-align: middle;
+		}
+	}
+}
+.closed{
+	border-top:1px solid #fff;
+	border-left:1px solid #fff;
+	border-right:1px solid #aaa;
+	border-bottom:1px solid #aaa;
+	background: #eee;
+	cursor: pointer;
+}

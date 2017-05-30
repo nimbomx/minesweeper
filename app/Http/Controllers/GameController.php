@@ -46,6 +46,8 @@ class GameController extends Controller
             $squares[]=$square;
         }
 
+        shuffle($squares); //randomize mines position
+        
         //CREATE GRID
         for ($r = 0; $r < ($game->rows); $r++) {
             for ($c = 0; $c < $game->cells; $c++) {
@@ -55,7 +57,7 @@ class GameController extends Controller
 
         $game->grid=json_encode($grid); //Encode as JSON to store
         $game->save();
-        
+
         $game->grid=json_decode($game->grid); //Decode JSON to consume
         return $game;
     }
