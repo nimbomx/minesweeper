@@ -18,7 +18,7 @@
 
 #Paint Grid
 	hide info if not revealed [done]
-	hide Info from API
+	hide Info from API [done]
 
 #Events
 	Reveal

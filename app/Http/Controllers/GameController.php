@@ -103,8 +103,17 @@ class GameController extends Controller
     public function show(Game $game)
     {
         $game->grid=json_decode($game->grid);
+        foreach($game->grid as $row){
+            foreach($row as $cell){
+                if(!$cell->revealed) {
+                    $cell->mine=null;
+                    $cell->adjacents=null;
+                }
+            }
+        }
         return $game;
     }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -161,6 +170,7 @@ class GameController extends Controller
         }
         $game->grid=json_encode($grid);
         $game->save();
+
 
         return json_encode($current_cell);
     }
