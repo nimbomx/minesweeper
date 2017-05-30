@@ -11,6 +11,16 @@
 				@verbatim
 					{{ game }}				
 					<pre>{{ grid }}</pre>
+					<table v-cloak>
+						<tr v-for="row in grid">
+
+							<td v-for="cell in row">
+								{{ cell }}
+							</td>
+
+						</tr>
+
+					</table>
 				@endverbatim
 					
 

@@ -45,6 +45,7 @@ class GameController extends Controller
             }
             $squares[]=$square;
         }
+
         //CREATE GRID
         for ($r = 0; $r < ($game->rows); $r++) {
             for ($c = 0; $c < $game->cells; $c++) {
@@ -52,10 +53,10 @@ class GameController extends Controller
             }
         }
 
-
-        $game->grid=serialize($grid);
+        $game->grid=json_encode($grid); //Encode as JSON to store
         $game->save();
-
+        
+        $game->grid=json_decode($game->grid); //Decode JSON to consume
         return $game;
     }
 
