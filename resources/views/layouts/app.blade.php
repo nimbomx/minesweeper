@@ -75,7 +75,9 @@
     </div>
 
     <!-- Scripts -->
-
+    <script>
+        window.apiRoute = "{{ url('/') }}";
+    </script>
     <script src="{{ asset('js/app.js') }}"></script>
      @yield('scripts')
 </body>

@@ -81,8 +81,23 @@ module.exports = __webpack_require__(9);
 
 var app = new Vue({
     el: '#app',
+    data: {
+        grid: [],
+        game: null
+    },
     mounted: function mounted() {
-        alert('newgame');
+        //alert('newgame');
+    },
+
+    methods: {
+        createGame: function createGame() {
+            var _this = this;
+
+            axios.get(apiRoute + '/api/game/create').then(function (response) {
+                _this.grid = response.data.grid;
+                _this.game = response.data.id;
+            });
+        }
     }
 });
 

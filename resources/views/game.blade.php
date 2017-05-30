@@ -5,11 +5,14 @@
 	<div class="row">
 		<div class="col-md-8 col-md-offset-2">
 			<div class="panel panel-default">
-				<div class="panel-heading">Game</div>
+				<div class="panel-heading">Game <button @click="createGame" class="btn btn-primary btn-xs pull-right">New game</button></div>
 
-				<div class="panel-body">
-
-					[GRID]
+				<div class="panel-body" v-cloak>
+				@verbatim
+					{{ game }}				
+					<pre>{{ grid }}</pre>
+				@endverbatim
+					
 
 				</div>
 			</div>

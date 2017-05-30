@@ -8,7 +8,7 @@
                 <div class="panel-heading">Games</div>
 
                 <div class="panel-body">
-                    <a href="{{ url('game') }}"><button class="btn btn-primary pull-right">New Game</button></a>
+                    <a href="{{ url('game') }}"><button class="btn btn-primary pull-right">START NEW GAME</button></a>
                     [Game LIST]
 
 
