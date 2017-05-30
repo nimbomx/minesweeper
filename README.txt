@@ -11,7 +11,7 @@
 		Create Squares [done]
 		Add Mines [done]
 		Mix squares
-		Create Grid
+		Create Grid [done]
 		Calculate Adjacents 
 	Show Method
 

@@ -38,18 +38,24 @@ class GameController extends Controller
         //CREATE SQUARES
 
         for ($i = 1; $i <= ($square_number); $i++) {
-            if($i<=$mines){
-            $square=1;//add mines
-        }else{
-            $square=0;//add empty squares
+            if($i<=$game->mines){
+                $square=1;//add mines
+            }else{
+                $square=0;//add empty squares
+            }
+            $squares[]=$square;
         }
-        $squares[]=$square;
-
         //CREATE GRID
+        for ($r = 0; $r < ($game->rows); $r++) {
+            for ($c = 0; $c < $game->cells; $c++) {
+                $grid[$r][$c]=array_shift($squares);
+            }
+        }
+
 
         $game->grid=serialize($grid);
         $game->save();
-        
+
         return $game;
     }
 
