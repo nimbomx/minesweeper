@@ -16,5 +16,5 @@ use Illuminate\Http\Request;
 /*Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });*/
-
+Route::middleware('auth:api')->get('square-reveal/{game}/{id}','GameController@reveal');
 Route::middleware('auth:api')->resource('game','GameController');

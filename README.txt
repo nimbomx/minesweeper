@@ -22,8 +22,9 @@
 
 #Events
 	Reveal
+		PRESERVE MOVES [done]
 		Bum! [basic]
-		Reveal Square
+		Reveal Square [done]
 		Reveal adjacents if blank 
 
 	Add Marks

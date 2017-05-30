@@ -139,4 +139,29 @@ class GameController extends Controller
     {
         //
     }
+
+
+    /**
+     * Reveal Square.
+     *
+     * @param  \App\Game  $game
+     * @return \Illuminate\Http\Response
+     */
+    public function reveal(Game $game,$id)
+    {
+        $current_cell=null;
+        $grid=json_decode($game->grid);
+        foreach($grid as $row){
+            foreach($row as $cell){
+                if($id==$cell->id) {
+                    $cell->revealed=1;
+                    $current_cell=$cell;
+                }
+            }
+        }
+        $game->grid=json_encode($grid);
+        $game->save();
+
+        return json_encode($current_cell);
+    }
 }

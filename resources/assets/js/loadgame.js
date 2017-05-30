@@ -15,11 +15,18 @@ const app = new Vue({
     	},
 
     	reveal(cell){
-    		cell.revealed=1;
-    		if(cell.mine){
-				alert('Bum!')
-				//[ MAKE AN GAME OVER SCREEN ]
-			}
+    		axios.get(apiRoute+'/api/square-reveal/'+this.game+'/'+cell.id).then((response) => {
+
+				cell.revealed=response.data.revealed;
+				cell.mine=response.data.mine;
+				cell.adjacents=response.data.adjacents;
+				if(response.data.mine){
+					alert('Bum!');
+					//[ MAKE AN GAME OVER SCREEN ]
+				}
+
+			});
+
     	}
     }
 });
