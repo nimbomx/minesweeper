@@ -15,12 +15,16 @@
 					<table class="minesGrid" v-cloak>
 						<tr v-for="row in grid">
 
-							<td v-for="cell in row" :class="{closed : cell.revealed!=1}" @click="reveal(cell)" >
+							<td v-for="cell in row" :class="{closed : cell.revealed!=1}" @click="reveal(cell)" @contextmenu="flag(cell,$event)">
 								<span v-if="cell.revealed==1">
 									<span v-if="cell.mine" >[X]</span>
 									<span v-else >
 										<span v-if="cell.adjacents>0">	{{ cell.adjacents }}</span>
 									</span>
+								</span>
+								<span v-else>
+									<span v-if="cell.flags==1" >[F]</span>
+									<span v-if="cell.flags==2" >[?]</span>
 								</span>
 							</td>
 

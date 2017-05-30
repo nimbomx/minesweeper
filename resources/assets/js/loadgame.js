@@ -15,8 +15,9 @@ const app = new Vue({
     	},
 
     	reveal(cell){
+    		if(cell.revealed!=0) return false;
+    		if(cell.flags>0) return false;
     		axios.get(apiRoute+'/api/square-reveal/'+this.game+'/'+cell.id).then((response) => {
-
 				cell.revealed=response.data.revealed;
 				cell.mine=response.data.mine;
 				cell.adjacents=response.data.adjacents;
@@ -27,9 +28,16 @@ const app = new Vue({
 				if(response.data.adjacents==0){
 					this.loadGame();
 				}
-
 			});
-
+    	},
+    	flag(cell,e){
+    		if(cell.flags==0)cell.flags=1;
+    		else if(cell.flags==1)cell.flags=2;
+    		else if(cell.flags==2)cell.flags=0;
+    		e.preventDefault();
+    		axios.get(apiRoute+'/api/square-flag/'+this.game+'/'+cell.id+'/'+cell.flags).then((response) => {
+    			console.log('flagged');
+			});
     	}
     }
 });

@@ -188,6 +188,29 @@ class GameController extends Controller
         return json_encode($current_cell);
     }
 
+    /**
+     * Flag Square.
+     *
+     * @param  \App\Game  $game
+     * @return \Illuminate\Http\Response
+     */
+    public function flag(Game $game,$id,$flag)
+    {
+        $current_cell=null;
+        $grid=json_decode($game->grid);
+        foreach($grid as $row){
+            foreach($row as $cell){
+                if($id==$cell->id) {
+                    $cell->flags=$flag;
+                    $current_cell=$cell;
+                }
+            }
+        }
+        $game->grid=json_encode($grid);
+        $game->save();
+
+        return json_encode($current_cell);
+    }
     //HELPERS
 
     private function hideInfo(Game $game){
