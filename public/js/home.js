@@ -63,63 +63,42 @@
 /******/ 	__webpack_require__.p = "";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 41);
+/******/ 	return __webpack_require__(__webpack_require__.s = 39);
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ 11:
+/***/ 39:
+/***/ (function(module, exports, __webpack_require__) {
+
+module.exports = __webpack_require__(9);
+
+
+/***/ }),
+
+/***/ 9:
 /***/ (function(module, exports) {
 
 var app = new Vue({
     el: '#app',
     data: {
-        grid: [],
-        game: null
+        route: apiRoute,
+        games: []
     },
     mounted: function mounted() {
-        if (!this.game) {
-            this.createGame();
-        }
-        // [SAVE IN LOCAL STORAGE LAST GAME ID FOR AUTLOAD ON REFRESH BROWSER]
+        this.listGames();
     },
 
     methods: {
-        createGame: function createGame() {
+        listGames: function listGames() {
             var _this = this;
 
-            axios.get(apiRoute + '/api/game/create').then(function (response) {
-                _this.grid = response.data.grid;
-                _this.game = response.data.id;
-                window.history.pushState('playgame', 'PlayGame', apiRoute + '/game/' + _this.game);
-            });
-        },
-        reveal: function reveal(cell) {
-            var _this2 = this;
-
-            axios.get(apiRoute + '/api/square-reveal/' + this.game + '/' + cell.id).then(function (response) {
-                cell.revealed = response.data.revealed;
-                cell.mine = response.data.mine;
-                cell.adjacents = response.data.adjacents;
-                if (response.data.mine) {
-                    alert('Bum!');
-                    //[ MAKE AN GAME OVER SCREEN ]
-                }
-                if (response.data.adjacents == 0) {
-                    _this2.loadGame();
-                }
+            axios.get(apiRoute + '/api/game').then(function (response) {
+                _this.games = response.data;
             });
         }
     }
 });
-
-/***/ }),
-
-/***/ 41:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__(11);
-
 
 /***/ })
 

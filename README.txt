@@ -24,14 +24,16 @@
 	Reveal
 		PRESERVE MOVES [done]
 		Bum! [basic]
+			On loose ask for destroy game
 		Reveal Square [done]
-		Reveal adjacents if blank 
+		Reveal adjacents if blank [done]
 
 	Add Marks
 		Red Flag
 		Question
 
 	Detect if all squares are revealed
+		On win ask for destroy game
 
 #Customize Grid
 	Rows
@@ -41,13 +43,15 @@
 #Time Tracking
 
 #Show Saved games 
-	filter by user
-	resume game
+	filter by user [done]
+	resume game [done]
 
 
 
 #API Documentation
 
 #Publish in Digital Ocean
+
+#Search Images could be Fontawesome icons
 
 #recover password

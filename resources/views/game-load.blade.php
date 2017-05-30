@@ -15,7 +15,7 @@
 					<table class="minesGrid" v-cloak>
 						<tr v-for="row in grid">
 
-							<td v-for="cell in row" :class="{closed : cell.revealed!=1}" @click="reveal(cell)">
+							<td v-for="cell in row" :class="{closed : cell.revealed!=1}" @click="reveal(cell)" >
 								<span v-if="cell.revealed==1">
 									<span v-if="cell.mine" >[X]</span>
 									<span v-else >

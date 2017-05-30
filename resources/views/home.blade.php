@@ -9,12 +9,21 @@
 
                 <div class="panel-body">
                     <a href="{{ url('game') }}"><button class="btn btn-primary pull-right">START NEW GAME</button></a>
-                    [Game LIST]
+                    <div v-cloak>
+                        <div v-for="game in games" style="margin-bottom: 10px;">
 
+                           @{{ game.enlapsed_time }} seconds<br>
+                           @{{ game.rows }} x @{{ game.cells }} with @{{ game.mines }} mines.<br>
+                           <a :href="route+'/game/'+game.id">Play this game</a>
+                       </div>
+                   </div>
 
-                </div>
-            </div>
-        </div>
-    </div>
+               </div>
+           </div>
+       </div>
+   </div>
 </div>
+@endsection
+@section('scripts')
+<script src="{{ asset('js/home.js') }}"></script>
 @endsection
