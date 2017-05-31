@@ -12,6 +12,12 @@ const app = new Vue({
     		axios.get(apiRoute+'/api/game').then((response) => {
 				this.games=response.data;
 			});
-    	}
+    	},
+        deleteGame(id){
+            if(!confirm('Delete the game?')) return false;
+            axios.delete(apiRoute+'/api/game/'+id).then((response) => {
+                this.listGames();
+            });
+        }
     }
 });

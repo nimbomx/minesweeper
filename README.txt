@@ -24,7 +24,7 @@
 	Reveal
 		PRESERVE MOVES [done]
 		Bum! [basic]
-			On loose ask for destroy game
+			On loose ask for destroy game******
 		Reveal Square [done]
 		Reveal adjacents if blank [done]
 
@@ -33,7 +33,7 @@
 		Question [done]
 
 	Detect if all squares are revealed [done]
-		On win ask for destroy game
+		On win ask for destroy game*********
 
 #Customize Grid
 	Rows [done]
@@ -41,18 +41,22 @@
 	Mines [done]
 
 #Time Tracking
+	Time Tracking*******
+	Save enlapsed time********
 
 #Show Saved games 
 	filter by user [done]
 	resume game [done]
-	destroy games
-
+	destroy games [done]
 
 
 #API Documentation
+	***********
 
 #Publish in Digital Ocean
+	*************
 
 #Search Images could be Fontawesome icons [done]
 
 #recover password 
+	**

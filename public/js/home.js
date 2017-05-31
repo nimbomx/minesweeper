@@ -96,6 +96,14 @@ var app = new Vue({
             axios.get(apiRoute + '/api/game').then(function (response) {
                 _this.games = response.data;
             });
+        },
+        deleteGame: function deleteGame(id) {
+            var _this2 = this;
+
+            if (!confirm('Delete the game?')) return false;
+            axios.delete(apiRoute + '/api/game/' + id).then(function (response) {
+                _this2.listGames();
+            });
         }
     }
 });
