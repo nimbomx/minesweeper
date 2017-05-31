@@ -1,3 +1,7 @@
+
+NOTES
+
+
 # Create Public Repo in GitHub [done]
 # Fresh Laravel [done]
 # Auth Scaffolding [done]
@@ -41,8 +45,8 @@
 	Mines [done]
 
 #Time Tracking
-	Time Tracking*******
-	Save enlapsed time********
+	Time Tracking [done]
+	Save enlapsed time [done]
 
 #Show Saved games 
 	filter by user [done]
@@ -50,8 +54,6 @@
 	destroy games [done]
 
 
-#API Documentation
-	***********
 
 #Publish in Digital Ocean
 	*************

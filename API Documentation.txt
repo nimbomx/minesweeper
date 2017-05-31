@@ -1,0 +1,161 @@
+#API Documentation
+
+[TODO] Login
+baerer
+
+*************
+*
+* INDEX
+* List of Games
+*
+* @return ARRAY
+* [TODO] remove the grid value from results
+*
+*************
+Method: GET
+URL:    http://minesweeper.nimbo.pro/api/game
+
+Response:
+Array of Games, every game item has the full structure described in the CREATE METHOD
+
+
+*************
+*
+* CREATE 
+* Create a new game with parameters
+* 
+*
+* @return JSON
+*
+*************
+Method: POST
+URL:    http://minesweeper.nimbo.pro/api/game/create
+
+Parameters:
+{
+   rows:10,
+   cells:10,
+   mines:15
+}
+
+Response:
+{
+   id:INT, //game id
+   user_id:INT, //user_id
+   enlapsed_time:INT, //time in seconds
+   rows:3,
+   cells:3,
+   mines:3,
+   grid:[
+          [(JSON*),(JSON),(JSON)],
+          [(JSON),(JSON),(JSON)],
+          [(JSON),(JSON),(JSON)]
+        ],
+   created_at:TIMESTAMP
+   updated_at:TIMESTAMP
+}
+
+JSON* Structure:
+{
+   mine:BOOLEAN,
+   revealed:BOOLEAN,
+   id:INT,
+   adjacents:INT,
+   flags:INT[0,1,2]
+}
+
+*************
+*
+* SHOW
+* Get a stored game by id
+* 
+* @return JSON
+*
+*************
+Method: GET
+URL:    http://minesweeper.nimbo.pro/api/game/{id}
+
+Response:
+JSON with the full structure described in the CREATE METHOD
+
+
+*************
+*
+* DESTROY
+* Delete a stored game by id
+* 
+* @return []
+*
+*************
+Method: DELETE
+URL:    http://minesweeper.nimbo.pro/api/game/{id}
+
+Response:[]
+
+*************
+*
+* SQUARE REVEAL
+* Reveal square by id
+* 
+* @return JSON
+*
+*************
+Method: POST
+URL:    http://minesweeper.nimbo.pro/api/game/square-reveal/{game}/{id}
+Parameters:
+{
+   time:INT,
+}
+Response:
+{
+   mine:BOOLEAN,
+   revealed:BOOLEAN,
+   id:INT,
+   adjacents:INT,
+   flags:INT[0,1,2]
+}
+
+*************
+*
+* SQUARE FLAG
+* Add flag to square by id, accept 3 flag options:
+* 0: no flag
+* 1: red flag
+* 2: question mark
+* 
+* @return JSON
+*
+*************
+Method: POST
+URL:    http://minesweeper.nimbo.pro/api/game/square-flag/{game}/{id}/{flag}
+Parameters:
+{
+   time:INT,
+}
+Response:
+{
+   mine:BOOLEAN,
+   revealed:BOOLEAN,
+   id:INT,
+   adjacents:INT,
+   flags:INT[0,1,2]
+}
+
+*************
+*
+* AUTO SAVE
+* Save enlapsed time 
+* 
+* @return false
+*
+*************
+Method: POST
+URL:    http://minesweeper.nimbo.pro/api/game/auto-save/{game}
+Parameters:
+{
+   time:INT,
+}
+
+Response: false
+
+*****************
