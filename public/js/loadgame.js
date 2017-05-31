@@ -84,6 +84,7 @@ var app = new Vue({
 			mines: 15
 		},
 		timer: null,
+		timerAutoSave: null,
 		game_over: true
 	},
 	mounted: function mounted() {
@@ -104,6 +105,7 @@ var app = new Vue({
 			axios.get(apiRoute + '/api/game/' + this.game).then(function (response) {
 				_this.grid = response.data.grid;
 				_this.mines = response.data.mines;
+				_this.enlapsed_time = response.data.enlapsed_time;
 				_this.game_over = false;
 				_this.startTimer();
 			});
@@ -121,7 +123,7 @@ var app = new Vue({
 			if (this.game_over) return false;
 			if (cell.revealed != 0) return false;
 			if (cell.flags > 0) return false;
-			axios.get(apiRoute + '/api/square-reveal/' + this.game + '/' + cell.id).then(function (response) {
+			axios.post(apiRoute + '/api/square-reveal/' + this.game + '/' + cell.id, { time: this.enlapsed_time }).then(function (response) {
 				cell.revealed = response.data.revealed;
 				cell.mine = response.data.mine;
 				cell.adjacents = response.data.adjacents;
@@ -149,18 +151,23 @@ var app = new Vue({
 			if (cell.revealed != 0) return false;
 			if (cell.flags == 0) cell.flags = 1;else if (cell.flags == 1) cell.flags = 2;else if (cell.flags == 2) cell.flags = 0;
 			e.preventDefault();
-			axios.get(apiRoute + '/api/square-flag/' + this.game + '/' + cell.id + '/' + cell.flags).then(function (response) {
-				console.log('flagged');
+			axios.post(apiRoute + '/api/square-flag/' + this.game + '/' + cell.id + '/' + cell.flags, { time: this.enlapsed_time }).then(function (response) {
+				//console.log('flagged');
 			});
 		},
 		startTimer: function startTimer() {
 			this.timer = setInterval(this.updateTime, 1000);
+			this.timerAutoSave = setInterval(this.autoSave, 10000);
 		},
 		stopTimer: function stopTimer() {
 			clearInterval(this.timer);
+			clearInterval(this.timerAutoSave);
 		},
 		updateTime: function updateTime() {
 			this.enlapsed_time++;
+		},
+		autoSave: function autoSave() {
+			axios.post(apiRoute + '/api/auto-save/' + this.game, { time: this.enlapsed_time });
 		},
 		winner: function winner() {
 			this.game_over = true;

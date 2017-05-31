@@ -11,6 +11,7 @@ const app = new Vue({
             mines:15,
 		},
 		timer:null,
+		timerAutoSave:null,
 		game_over:true
 	},
 	mounted(){
@@ -29,6 +30,7 @@ const app = new Vue({
 			axios.get(apiRoute+'/api/game/'+this.game).then((response) => {
 				this.grid=response.data.grid;
 				this.mines=response.data.mines;
+				this.enlapsed_time=response.data.enlapsed_time;
 				this.game_over=false;
 				this.startTimer();
 			});
@@ -43,7 +45,7 @@ const app = new Vue({
 			if(this.game_over) return false;
 			if(cell.revealed!=0) return false;
 			if(cell.flags>0) return false;
-			axios.get(apiRoute+'/api/square-reveal/'+this.game+'/'+cell.id).then((response) => {
+			axios.post(apiRoute+'/api/square-reveal/'+this.game+'/'+cell.id,{time:this.enlapsed_time}).then((response) => {
 				cell.revealed=response.data.revealed;
 				cell.mine=response.data.mine;
 				cell.adjacents=response.data.adjacents;
@@ -73,19 +75,24 @@ const app = new Vue({
 			else if(cell.flags==1)cell.flags=2;
 			else if(cell.flags==2)cell.flags=0;
 			e.preventDefault();
-			axios.get(apiRoute+'/api/square-flag/'+this.game+'/'+cell.id+'/'+cell.flags).then((response) => {
-				console.log('flagged');
+			axios.post(apiRoute+'/api/square-flag/'+this.game+'/'+cell.id+'/'+cell.flags,{time:this.enlapsed_time}).then((response) => {
+				//console.log('flagged');
 			});
 		},
 
 		startTimer(){
 			this.timer=setInterval(this.updateTime, 1000);
+			this.timerAutoSave=setInterval(this.autoSave, 10000);
 		},
 		stopTimer(){
 			clearInterval(this.timer);
+			clearInterval(this.timerAutoSave);
 		},
 		updateTime(){
 			this.enlapsed_time++;
+		},
+		autoSave(){
+			axios.post(apiRoute+'/api/auto-save/'+this.game,{time:this.enlapsed_time});
 		},
 
 		winner(){

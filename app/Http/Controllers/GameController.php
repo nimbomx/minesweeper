@@ -147,8 +147,9 @@ class GameController extends Controller
      * @param  \App\Game  $game
      * @return \Illuminate\Http\Response
      */
-    public function reveal(Game $game,$id)
+    public function reveal(Request $request, Game $game,$id)
     {
+        $game->enlapsed_time=$request->time;
         $current_cell=null;
         $grid=json_decode($game->grid);
         foreach($grid as $row){
@@ -195,8 +196,9 @@ class GameController extends Controller
      * @param  \App\Game  $game
      * @return \Illuminate\Http\Response
      */
-    public function flag(Game $game,$id,$flag)
+    public function flag(Request $request, Game $game,$id,$flag)
     {
+        $game->enlapsed_time=$request->time;
         $current_cell=null;
         $grid=json_decode($game->grid);
         foreach($grid as $row){
@@ -212,6 +214,19 @@ class GameController extends Controller
 
         return json_encode($current_cell);
     }
+
+/**
+     * Auto Save.
+     *
+     * @param  \App\Game  $game
+     * @return \Illuminate\Http\Response
+     */
+    public function autoSave(Request $request, Game $game)
+    {
+        $game->enlapsed_time=$request->time;
+        $game->save();
+    }
+
     //HELPERS
 
     private function hideInfo(Game $game){
