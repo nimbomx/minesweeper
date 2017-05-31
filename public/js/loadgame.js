@@ -77,11 +77,14 @@ var app = new Vue({
 		grid: [],
 		game: loadGame,
 		mines: null,
+		enlapsed_time: 0,
 		newParams: {
 			rows: 10,
 			cells: 10,
 			mines: 15
-		}
+		},
+		timer: null,
+		game_over: true
 	},
 	mounted: function mounted() {
 		this.loadGame();
@@ -89,6 +92,7 @@ var app = new Vue({
 
 	methods: {
 		createGame: function createGame() {
+			this.stopTimer();
 			axios.post(apiRoute + '/api/game/create', this.newParams).then(function (response) {
 				window.location = apiRoute + '/game/' + response.data.id;
 			});
@@ -96,14 +100,25 @@ var app = new Vue({
 		loadGame: function loadGame() {
 			var _this = this;
 
+			this.stopTimer();
 			axios.get(apiRoute + '/api/game/' + this.game).then(function (response) {
 				_this.grid = response.data.grid;
 				_this.mines = response.data.mines;
+				_this.game_over = false;
+				_this.startTimer();
+			});
+		},
+		reloadGame: function reloadGame() {
+			var _this2 = this;
+
+			axios.get(apiRoute + '/api/game/' + this.game).then(function (response) {
+				_this2.grid = response.data.grid;
 			});
 		},
 		reveal: function reveal(cell) {
-			var _this2 = this;
+			var _this3 = this;
 
+			if (this.game_over) return false;
 			if (cell.revealed != 0) return false;
 			if (cell.flags > 0) return false;
 			axios.get(apiRoute + '/api/square-reveal/' + this.game + '/' + cell.id).then(function (response) {
@@ -111,36 +126,51 @@ var app = new Vue({
 				cell.mine = response.data.mine;
 				cell.adjacents = response.data.adjacents;
 				window.closedS = 0;
-				_this2.grid.forEach(function (row) {
+				_this3.grid.forEach(function (row) {
 					row.forEach(function (square) {
 						if (square.revealed == 0) {
 							window.closedS++;
 						}
 					});
 				});
-				if (window.closedS == _this2.mines) {
-					_this2.winner();
+				if (window.closedS == _this3.mines) {
+					_this3.winner();
 				}
 				if (response.data.mine) {
-					_this2.looser();
+					_this3.looser();
 				}
 				if (response.data.adjacents == 0) {
-					_this2.loadGame();
+					_this3.reloadGame();
 				}
 			});
 		},
 		flag: function flag(cell, e) {
+			if (this.game_over) return false;
+			if (cell.revealed != 0) return false;
 			if (cell.flags == 0) cell.flags = 1;else if (cell.flags == 1) cell.flags = 2;else if (cell.flags == 2) cell.flags = 0;
 			e.preventDefault();
 			axios.get(apiRoute + '/api/square-flag/' + this.game + '/' + cell.id + '/' + cell.flags).then(function (response) {
 				console.log('flagged');
 			});
 		},
+		startTimer: function startTimer() {
+			this.timer = setInterval(this.updateTime, 1000);
+		},
+		stopTimer: function stopTimer() {
+			clearInterval(this.timer);
+		},
+		updateTime: function updateTime() {
+			this.enlapsed_time++;
+		},
 		winner: function winner() {
+			this.game_over = true;
+			this.stopTimer();
 			console.log('win');
 			//[ MAKE AN WIN SCREEN ]
 		},
 		looser: function looser() {
+			this.game_over = true;
+			this.stopTimer();
 			console.log('loose');
 			//[ MAKE AN GAME OVER SCREEN ]
 		}

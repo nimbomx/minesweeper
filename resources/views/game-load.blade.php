@@ -21,7 +21,7 @@
 				<div class="panel-body" v-cloak>
 					Game id: {{ $game }}<br>
 					@verbatim
-					
+					Enlapsed time: <span v-text="enlapsed_time"></span><br>
 
 					<table class="minesGrid" v-cloak>
 						<tr v-for="row in grid">
