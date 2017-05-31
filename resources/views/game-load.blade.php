@@ -28,14 +28,14 @@
 
 							<td v-for="cell in row" :class="{closed : cell.revealed!=1}" @click="reveal(cell)" @contextmenu="flag(cell,$event)">
 								<span v-if="cell.revealed==1">
-									<span v-if="cell.mine" >[X]</span>
+									<span v-if="cell.mine"><i class="fa fa-bomb" aria-hidden="true"></i></span>
 									<span v-else >
 										<span v-if="cell.adjacents>0">	{{ cell.adjacents }}</span>
 									</span>
 								</span>
 								<span v-else>
-									<span v-if="cell.flags==1" >[F]</span>
-									<span v-if="cell.flags==2" >[?]</span>
+									<span v-if="cell.flags==1" ><i class="fa fa-flag" aria-hidden="true"></i></span>
+									<span v-if="cell.flags==2" ><i class="fa fa-question" aria-hidden="true"></i></span>
 								</span>
 							</td>
 

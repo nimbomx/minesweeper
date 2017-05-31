@@ -53,6 +53,6 @@
 
 #Publish in Digital Ocean
 
-#Search Images could be Fontawesome icons
+#Search Images could be Fontawesome icons [done]
 
-#recover password
+#recover password 

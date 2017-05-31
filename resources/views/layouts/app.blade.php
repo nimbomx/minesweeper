@@ -75,6 +75,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="https://use.fontawesome.com/d49093ab72.js"></script>
     <script>
         window.apiRoute = "{{ url('/') }}";
     </script>

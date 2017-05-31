@@ -21,6 +21,19 @@
 			height: 40px;
 			text-align: center;
 			vertical-align: middle;
+			font-weight: bold;
+			.fa-bomb{
+				font-size: 15px;
+				color: #000;
+			}
+			.fa-flag{
+				font-size: 15px;
+				color: red;
+			}
+			.fa-question{
+				font-size: 18px;
+				color: blue;
+			}
 		}
 	}
 }
